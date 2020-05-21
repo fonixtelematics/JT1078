@@ -1,8 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.0;netstandard2.1;</TargetFrameworks>
-    <LangVersion>8.0</LangVersion>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>7.3</LangVersion>
     <Copyright>Copyright 2019.</Copyright>
     <Authors>SmallChi(Koike)</Authors>
     <PackageId>JT808.Protocol.Extensions.JT1078</PackageId>
@@ -17,6 +17,8 @@
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <Version>2.2.9</Version>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <AutoGenerateBindingRedirects></AutoGenerateBindingRedirects>
+    <OutputType>Library</OutputType>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
@@ -43,14 +45,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="JT808" Version="1.0.7" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.2.0" />
     <PackageReference Include="System.Text.Json" Version="4.7.1" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Reference Include="JT808.Protocol">
-      <HintPath>..\..\..\code\JT808\src\JT808.Protocol\bin\Debug\netstandard2.0\JT808.Protocol.dll</HintPath>
-    </Reference>
   </ItemGroup>
 
 </Project>
