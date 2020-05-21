@@ -30,7 +30,7 @@ namespace JT808.Protocol.Extensions.JT1078.MessageBody
         /// <summary>
         /// 报警标志
         /// </summary>
-        public uint AlarmFlag { get; set; }
+        public ulong AlarmFlag { get; set; }
         /// <summary>
         /// 音视频资源类型
         /// </summary>
@@ -53,7 +53,7 @@ namespace JT808.Protocol.Extensions.JT1078.MessageBody
             writer.WriteString($"[{value.BeginTime.ToString("yyMMddHHmmss")}]起始时间", value.BeginTime.ToString("yyyy-MM-dd HH:mm:ss"));
             value.EndTime = reader.ReadDateTime6();
             writer.WriteString($"[{value.EndTime.ToString("yyMMddHHmmss")}]起始时间", value.EndTime.ToString("yyyy-MM-dd HH:mm:ss"));
-            value.AlarmFlag = reader.ReadUInt32();
+            value.AlarmFlag = reader.ReadUInt64();
             writer.WriteNumber($"[{value.AlarmFlag.ReadNumber()}]报警标志", value.AlarmFlag);
             value.AVResourceType = reader.ReadByte();
             writer.WriteString($"[{value.AVResourceType.ReadNumber()}]音视频类型", AVResourceTypeDisplay(value.AVResourceType));
@@ -152,7 +152,7 @@ namespace JT808.Protocol.Extensions.JT1078.MessageBody
             jT808_0x9205.LogicChannelNo = reader.ReadByte();
             jT808_0x9205.BeginTime = reader.ReadDateTime6();
             jT808_0x9205.EndTime = reader.ReadDateTime6();
-            jT808_0x9205.AlarmFlag = reader.ReadUInt32();
+            jT808_0x9205.AlarmFlag = reader.ReadUInt64();
             jT808_0x9205.AVResourceType = reader.ReadByte();
             jT808_0x9205.StreamType = reader.ReadByte();
             jT808_0x9205.MemoryType = reader.ReadByte();
@@ -164,7 +164,7 @@ namespace JT808.Protocol.Extensions.JT1078.MessageBody
             writer.WriteByte(value.LogicChannelNo);
             writer.WriteDateTime6(value.BeginTime);
             writer.WriteDateTime6(value.EndTime);
-            writer.WriteUInt32(value.AlarmFlag);
+            writer.WriteUInt64(value.AlarmFlag);
             writer.WriteByte(value.AVResourceType);
             writer.WriteByte(value.StreamType);
             writer.WriteByte(value.MemoryType);

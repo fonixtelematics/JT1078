@@ -28,7 +28,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="JT808" Version="2.2.10" />
+    <Compile Remove="MessageBody\JT808_0x0200_0x14.cs" />
+    <Compile Remove="MessageBody\JT808_0x0200_0x15.cs" />
+    <Compile Remove="MessageBody\JT808_0x0200_0x16.cs" />
+    <Compile Remove="MessageBody\JT808_0x0200_0x17.cs" />
+    <Compile Remove="MessageBody\JT808_0x0200_0x18.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -36,6 +40,17 @@
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.2.0" />
+    <PackageReference Include="System.Text.Json" Version="4.7.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="JT808.Protocol">
+      <HintPath>..\..\..\code\JT808\src\JT808.Protocol\bin\Debug\netstandard2.0\JT808.Protocol.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

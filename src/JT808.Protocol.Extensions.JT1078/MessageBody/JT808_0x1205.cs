@@ -14,6 +14,8 @@ namespace JT808.Protocol.Extensions.JT1078.MessageBody
     /// </summary>
     public class JT808_0x1205 : JT808Bodies, IJT808MessagePackFormatter<JT808_0x1205>, IJT808Analyze
     {
+        public const int AvResourceBodyLength = 28;
+
         public override string Description => "终端上传音视频资源列表";
         public override ushort MsgId => 0x1205;
         /// <summary>
@@ -58,9 +60,10 @@ namespace JT808.Protocol.Extensions.JT1078.MessageBody
             {
                 jT808_0x1205.AVResouces = new List<JT808_0x1205_AVResouce>();
                 var formatter = config.GetMessagePackFormatter<JT808_0x1205_AVResouce>();
-                for (int i = 0; i < channelTotal; i++)
+                var aux = reader.Reader.Length / AvResourceBodyLength;
+                for ( int i = 0; i < aux; i++ )
                 {
-                    jT808_0x1205.AVResouces.Add(formatter.Deserialize(ref reader, config));
+                    jT808_0x1205.AVResouces.Add( formatter.Deserialize( ref reader, config ) );
                 }
             }
             return jT808_0x1205;

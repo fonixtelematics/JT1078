@@ -19,4 +19,10 @@
     <ProjectReference Include="..\JT808.Protocol.Extensions.JT1078\JT808.Protocol.Extensions.JT1078.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="JT808.Protocol">
+      <HintPath>..\..\..\code\JT808\src\JT808.Protocol\bin\Debug\netstandard2.0\JT808.Protocol.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
