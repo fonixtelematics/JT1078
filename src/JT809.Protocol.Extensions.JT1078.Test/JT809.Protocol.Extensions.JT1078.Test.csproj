@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AssemblyName>Fonix.Gateway.JT809.Protocol.Extensions.JT1078.Test</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <doc>
     <assembly>
-        <name>JT1078.Flv</name>
+        <name>Fonix.Gateway.JT1078.Flv</name>
     </assembly>
     <members>
         <member name="P:JT1078.Flv.Audio.State.Valprev">

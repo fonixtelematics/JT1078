@@ -19,6 +19,7 @@
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <AutoGenerateBindingRedirects></AutoGenerateBindingRedirects>
     <OutputType>Library</OutputType>
+    <AssemblyName>Fonix.Gateway.JT808.Protocol.Extensions.JT1078</AssemblyName>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
