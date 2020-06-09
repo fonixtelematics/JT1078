@@ -11,7 +11,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using JT1078.Protocol;
 
-[assembly: InternalsVisibleTo("JT1078.Flv.Test")]
+[assembly: InternalsVisibleTo("Fonix.Gateway.JT1078.Flv.Test")]
 namespace JT1078.Flv
 {
     /// <summary>
