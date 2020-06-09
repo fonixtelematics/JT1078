@@ -5,8 +5,8 @@
     <LangVersion>7.3</LangVersion>
     <Copyright>Copyright 2019.</Copyright>
     <Authors>SmallChi(Koike)</Authors>
-    <PackageId>JT809.Protocol.Extensions.JT1078</PackageId>
-    <Product>JT809.Protocol.Extensions.JT1078</Product>
+    <PackageId>Fonix.Gateway.JT809.Protocol.Extensions.JT1078</PackageId>
+    <Product>Fonix.Gateway.JT809.Protocol.Extensions.JT1078</Product>
     <Description>基于JT809协议、GB809协议扩展的视频消息协议</Description>
     <PackageReleaseNotes>基于JT809协议、GB809协议扩展的视频消息协议</PackageReleaseNotes>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>

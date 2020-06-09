@@ -5,8 +5,8 @@
     <LangVersion>7.3</LangVersion>
     <Copyright>Copyright 2019.</Copyright>
     <Authors>SmallChi(Koike)</Authors>
-    <PackageId>JT1078.Hls</PackageId>
-    <Product>JT1078.Hls</Product>
+    <PackageId>Fonix.Gateway.JT1078.Hls</PackageId>
+    <Product>Fonix.Gateway.JT1078.Hls</Product>
     <Description>基于JT1078的Hls视频编码器</Description>
     <PackageReleaseNotes>基于JT1078的Hls视频编码器</PackageReleaseNotes>
     <RepositoryUrl>https://github.com/SmallChi/JT1078</RepositoryUrl>

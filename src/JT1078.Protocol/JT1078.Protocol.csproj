@@ -5,8 +5,8 @@
     <LangVersion>7.3</LangVersion>
     <Copyright>Copyright 2019.</Copyright>
     <Authors>SmallChi(Koike)</Authors>
-    <PackageId>JT1078</PackageId>
-    <Product>JT1078</Product>
+    <PackageId>Fonix.Gateway.JT1078</PackageId>
+    <Product>Fonix.Gateway.JT1078</Product>
     <Description>基于JT1078的RTP协议</Description>
     <PackageReleaseNotes>基于JT1078的RTP协议</PackageReleaseNotes>
     <RepositoryUrl>https://github.com/SmallChi/JT1078</RepositoryUrl>
