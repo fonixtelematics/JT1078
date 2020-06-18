@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Fonix.Gateway.JT808" Version="1.0.11" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.1.3" />
     <PackageReference Include="Microsoft.Extensions.Logging" Version="3.1.3" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
@@ -18,12 +19,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\JT808.Protocol.Extensions.JT1078\JT808.Protocol.Extensions.JT1078.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Reference Include="JT808.Protocol">
-      <HintPath>..\..\..\code\JT808\src\JT808.Protocol\bin\Debug\netstandard2.0\JT808.Protocol.dll</HintPath>
-    </Reference>
   </ItemGroup>
 
 </Project>
