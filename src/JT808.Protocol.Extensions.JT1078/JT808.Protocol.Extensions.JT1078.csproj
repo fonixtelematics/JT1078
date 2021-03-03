@@ -46,7 +46,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Fonix.Gateway.JT808" Version="1.0.12" />
+    <PackageReference Include="Fonix.Gateway.JT808" Version="1.0.11" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.2.0" />
     <PackageReference Include="System.Text.Json" Version="4.7.1" />
   </ItemGroup>
